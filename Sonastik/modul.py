@@ -28,13 +28,6 @@ def save(f,text):  #funct dobavljaet slova v "lists", i ispolzuet funct "Loe_fai
     mas=loe_failist(f)
     return mas
 
-def pop(f,text): 
-    file=open(f,'a',encoding="utf-8-sig")
-    file.remove(text+"\n")
-    file.close()
-    mas=[]
-    mas=loe_failist(f)
-    return mas
 
 def add_sõna():  #soxranjaet slova kotorie vvel polzovateli, ispolzuja funct "save"
     rus_list=input("Sisesta sõna vene keeles:")
